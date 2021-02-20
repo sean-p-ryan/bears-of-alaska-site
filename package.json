@@ -1,0 +1,22 @@
+{
+    "name": "bears-website",
+    "version": "1.0.0",
+    "description": "A website for the band Bears of Alaska",
+    "main": "main.js",
+    "scripts": {
+        "start": "sass --watch main.scss main.css && nodemon"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sean-p-ryan/bears-of-alaska-site.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sean-p-ryan/bears-of-alaska-site/issues"
+    },
+    "homepage": "https://github.com/sean-p-ryan/bears-of-alaska-site#readme",
+    "dependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
