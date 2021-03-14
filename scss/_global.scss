@@ -1,0 +1,34 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    @include red-rose;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+// p {
+//     font-size: 1.2rem;
+// }
+.hero-image {
+    background-image: url('../img/landing-page-photo-uncompressed.jpg')
+}

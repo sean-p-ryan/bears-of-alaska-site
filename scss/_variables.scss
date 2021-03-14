@@ -1,0 +1,24 @@
+// Fonts
+$font-black: #000000;
+$font-white: white;
+@mixin red-rose {
+    font-family: 'Red Rose', cursive;
+    line-height: 1.5rem;
+}
+
+@mixin helvetica {
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+}
+
+// Page backgrounds
+$music-page-background: black;
+$bio-page-background: #BE6136;
+$contact-page-background: url('../img/contact-page-uncompressed.jpg');
+// Breakpoints
+$screen-smallest: 320px;
+$screen-smaller: 375px;
+$screen-small: 414px;
+$screen-tablet-narrow: 767px;
+// Fonts

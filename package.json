@@ -4,7 +4,7 @@
     "description": "A website for the band Bears of Alaska",
     "main": "main.js",
     "scripts": {
-        "start": "sass --watch main.scss main.css && nodemon"
+        "start": "sass --watch ./scss/main.scss ./css/main.css && nodemon"
     },
     "repository": {
         "type": "git",

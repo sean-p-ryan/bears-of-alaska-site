@@ -1,0 +1,23 @@
+.contact-page-wrapper {
+    height: 225px;
+    width: 100vw;
+    background-image: $contact-page-background;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: $screen-tablet-narrow) {
+        height: 500px;
+    }
+}
+
+.contact-link {
+    color: $font-white;
+    margin-top: 7em;
+    text-align: center;
+}
+
+.email {
+    font-size: 1rem;
+}
