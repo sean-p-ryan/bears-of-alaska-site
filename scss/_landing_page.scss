@@ -1,9 +1,6 @@
 .landing-page-wrapper {
     width: 100vw;
     height: auto;
-    @media (min-width: $screen-tablet-narrow) {
-        // height: 100vh;
-    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,9 +12,6 @@
     width: 93vw;
     height: auto;
     padding-right: 25px;
-    @media (min-width: $screen-tablet-narrow) {
-        // max-height: 92vh;
-    }
 }
 
 .logo {

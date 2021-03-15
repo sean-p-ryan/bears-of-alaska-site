@@ -149,6 +149,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
 }
+
 .landing-page-content-wrapper {
   margin: 0 auto;
   position: relative;
@@ -156,6 +157,7 @@ h3 {
   height: auto;
   padding-right: 25px;
 }
+
 .logo {
   background-image: url(../img/logo-uncompressed.png);
   width: 127px;
@@ -223,26 +225,21 @@ h3 {
     height: 655px;
   }
 }
-
 @media (min-width: 1023px) {
-  .music-page-wrapper {
+  .music-page-wrapper .music-page-wrapper {
     display: flex;
     flex-direction: column;
     height: 750px;
   }
+}
 
+@media (min-width: 1023px) {
   .music-page-inner-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-  }
-
-  .music-page-image {
-    width: 531px;
-    height: 531px;
-    background-position-y: -232px;
-    margin: 0 50px 0 0;
+    padding: 0 50px;
   }
 }
 .music-page-image {
@@ -251,7 +248,7 @@ h3 {
   margin: 50px auto;
   background-image: url(../img/music-page-photo-uncompressed.jpg);
   background-size: cover;
-  background-position-y: -130px;
+  background-position-y: bottom;
   background-repeat: no-repeat;
 }
 @media (min-width: 375px) {
@@ -270,7 +267,6 @@ h3 {
   .music-page-image {
     width: 531px;
     height: 531px;
-    background-position-y: -232px;
     margin: 0 50px 0 0;
   }
 }

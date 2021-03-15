@@ -2,6 +2,7 @@
     width: 100vw;
     height: 550px;
     padding-top: 10px;
+    background-color: $music-page-background;
     @media (min-width: $screen-smaller) {
         height: 600px;
     }
@@ -11,26 +12,22 @@
     @media (min-width: $screen-tablet-narrow) {
         height: 655px;
     }
-    background-color: $music-page-background;
+    @media (min-width: $screen-tablet-large) {
+        .music-page-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 750px;
+        }
+    }
 }
 
 @media (min-width: $screen-tablet-large) {
-    .music-page-wrapper {
-        display: flex;
-        flex-direction: column;
-        height: 750px;
-    }
     .music-page-inner-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 50px;
-    }
-    .music-page-image {
-        width: 531px;
-        height: 531px;
-        background-position-y: -232px;
-        margin: 0 50px 0 0;
+        padding: 0 50px;
     }
 }
 
@@ -40,7 +37,7 @@
     margin: 50px auto;
     background-image: url(../img/music-page-photo-uncompressed.jpg);
     background-size: cover;
-    background-position-y: -130px;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     @media (min-width: $screen-smaller) {
         width: 325px;
@@ -53,7 +50,6 @@
     @media (min-width: $screen-tablet-large) {
         width: 531px;
         height: 531px;
-        background-position-y: -232px;
         margin: 0 50px 0 0;
     }
 }
