@@ -39,6 +39,11 @@ h3 {
   display: none;
   background: #ffffff;
 }
+@media (min-width: 769px) {
+  .nav-items {
+    padding-top: 60px;
+  }
+}
 
 .nav-item {
   margin-bottom: 50px;
@@ -62,7 +67,7 @@ h3 {
 
 #nav-toggle {
   position: absolute;
-  right: 35px;
+  right: 27px;
   top: 56px;
   cursor: pointer;
   z-index: 2000;
@@ -104,7 +109,7 @@ h3 {
   display: block;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   #nav-toggle {
     display: none;
   }
@@ -113,17 +118,8 @@ h3 {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    position: absolute;
-    top: 80px;
-    right: 30px;
   }
-}
-@media (min-width: 767px) and (min-width: 1023px) {
-  .nav-bar {
-    right: 4%;
-  }
-}
-@media (min-width: 767px) {
+
   .nav-items {
     display: flex;
     flex-direction: row;
@@ -132,50 +128,25 @@ h3 {
     justify-content: flex-end;
     background: none;
   }
-}
-@media (min-width: 767px) {
+
   .nav-item {
     margin: 0 0 0 20px;
   }
 }
 .landing-page-wrapper {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .landing-page-wrapper {
-    height: 80vh;
-  }
-}
-@media (min-width: 1500px) {
-  .landing-page-wrapper {
-    height: 100vh;
-  }
-}
-
 .landing-page-content-wrapper {
-  width: 320px;
   margin: 0 auto;
   position: relative;
+  width: 93vw;
+  height: auto;
+  padding-right: 25px;
 }
-@media (min-width: 375px) {
-  .landing-page-content-wrapper {
-    width: 375px;
-  }
-}
-@media (min-width: 414px) {
-  .landing-page-content-wrapper {
-    width: 414px;
-  }
-}
-@media (min-width: 767px) {
-  .landing-page-content-wrapper {
-    width: 95%;
-  }
-}
-
 .logo {
   background-image: url(../img/logo-uncompressed.png);
   width: 127px;
@@ -183,63 +154,24 @@ h3 {
   background-size: cover;
   position: absolute;
   top: 35px;
-  left: 15px;
-}
-@media (min-width: 1023px) {
-  .logo {
-    width: 167px;
-    height: 132px;
-    left: 0;
-  }
+  left: 10px;
 }
 
 .hero-image {
   background-image: url(../img/landing-page-photo-uncompressed.jpg);
-  background-size: 227%;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 249px;
-  height: 376px;
-  background-position-x: 59%;
-  margin: 40px auto;
+  height: 120vw;
+  margin-left: 7%;
+  margin-top: 32px;
+  background-position-x: 60%;
+  background-position-y: bottom;
 }
-@media (min-width: 375px) {
+@media (min-width: 769px) {
   .hero-image {
-    width: 303px;
-    height: 460px;
-  }
-}
-@media (min-width: 414px) {
-  .hero-image {
-    width: 346px;
-    height: 524px;
-  }
-}
-@media (min-width: 767px) {
-  .hero-image {
-    width: 91%;
-    height: 75%;
-    margin-top: 121px;
-    background-position-y: -260px;
-  }
-}
-@media (min-width: 1023px) {
-  .hero-image {
-    height: 700px;
-    background-position-y: 0px;
-    background-size: 100%;
-  }
-}
-@media (min-width: 1250px) {
-  .hero-image {
-    height: 77%;
-    background-position-y: 0px;
-    background-size: 100%;
-  }
-}
-@media (min-width: 1500px) {
-  .hero-image {
-    max-height: 825px;
-    background-position-y: -215px;
+    height: 50vw;
+    margin-left: 50px;
+    margin-top: 45px;
   }
 }
 
@@ -247,14 +179,14 @@ h3 {
   list-style: none;
   display: flex;
   justify-content: center;
-  font-size: 1.9rem;
-  justify-content: center;
+  font-size: 1.4rem;
   width: 100%;
+  margin: 25px 0;
 }
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   .social-badges {
-    position: absolute;
-    bottom: 15px;
+    font-size: 1.9rem;
+    margin: 30px;
   }
 }
 .social-badges li {
@@ -277,7 +209,7 @@ h3 {
     height: 650px;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   .music-page-wrapper {
     height: 655px;
   }
@@ -357,7 +289,7 @@ h3 {
   letter-spacing: 0.02rem;
   text-transform: none;
 }
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   .bio-text {
     width: 700px;
   }
@@ -373,7 +305,7 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   .contact-page-wrapper {
     height: 500px;
   }

@@ -1,28 +1,22 @@
 .landing-page-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    @media (min-width: $screen-tablet-narrow) {
+        // height: 100vh;
+    }
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-        height: 80vh;
-    }
-    @media (min-width: $screen-desktop-large) {
-        height: 100vh;
-    }
 }
 
 .landing-page-content-wrapper {
-    width: 320px;
     margin: 0 auto;
     position: relative;
-    @media (min-width: $screen-smaller) {
-        width: 375px;
-    }
-    @media (min-width: $screen-small) {
-        width: 414px;
-    }
+    width: 93vw;
+    height: auto;
+    padding-right: 25px;
     @media (min-width: $screen-tablet-narrow) {
-        width: 95%;
+        // max-height: 92vh;
     }
 }
 
@@ -33,64 +27,35 @@
     background-size: cover;
     position: absolute;
     top: 35px;
-    left: 15px;
-    @media (min-width: $screen-tablet-large) {
-        width: 167px;
-        height: 132px;
-        left: 0;
-    }
+    left: 10px;
 }
 
 .hero-image {
     background-image: url(../img/landing-page-photo-uncompressed.jpg);
-    background-size: 227%;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 249px;
-    height: 376px;
-    @media (min-width: $screen-smaller) {
-        width: 303px;
-        height: 460px;
-    }
-    @media (min-width: $screen-small) {
-        width: 346px;
-        height: 524px;
-    }
+    height: 120vw;
+    margin-left: 7%;
+    margin-top: 32px;
+    background-position-x: 60%;
+    background-position-y: bottom;
     @media (min-width: $screen-tablet-narrow) {
-        width: 91%;
-        height: 75%;
-        margin-top: 121px;
-        background-position-y: -260px;
+        height: 50vw;
+        margin-left: 50px;
+        margin-top: 45px;
     }
-    @media (min-width: $screen-tablet-large) {
-        // min-width: 800px;
-        height: 700px;
-        background-position-y: 0px;
-        background-size: 100%;
-    }
-    @media (min-width: $screen-desktop-small) {
-        // width: 971px;
-        height: 77%;
-        background-position-y: 0px;
-        background-size: 100%;
-    }
-    @media (min-width: $screen-desktop-large) {
-        max-height: 825px;
-        background-position-y: -215px;
-    }
-    background-position-x: 59%;
-    margin: 40px auto;
 }
 
 .social-badges {
     list-style: none;
     display: flex;
     justify-content: center;
-    font-size: 1.9rem;
-    justify-content: center;
+    font-size: 1.4rem;
     width: 100%;
+    margin: 25px 0;
     @media (min-width: $screen-tablet-narrow) {
-        position: absolute;
-        bottom: 15px;
+        font-size: 1.9rem;
+        margin: 30px;
     }
     & li {
         margin: 0 10px;
