@@ -22,16 +22,7 @@
         width: 414px;
     }
     @media (min-width: $screen-tablet-narrow) {
-        width: 750px;
-    }
-    @media (min-width: $screen-tablet-large) {
-        width: 900px;
-    }
-    @media (min-width: $screen-desktop-small) {
-        width: 1050px;
-    }
-    @media (min-width: $screen-desktop-large) {
-        width: 1400px;
+        width: 95%;
     }
 }
 
@@ -41,11 +32,8 @@
     height: 100px;
     background-size: cover;
     position: absolute;
-    top: 40px;
+    top: 35px;
     left: 15px;
-    @media (min-width: $screen-tablet-narrow) {
-        top: 70px;
-    }
     @media (min-width: $screen-tablet-large) {
         width: 167px;
         height: 132px;
@@ -69,9 +57,9 @@
     }
     @media (min-width: $screen-tablet-narrow) {
         width: 95%;
-        height: 700px;
-        margin-top: 146px;
-        background-position-y: -243px;
+        height: 75%;
+        margin-top: 121px;
+        background-position-y: -260px;
     }
     @media (min-width: $screen-tablet-large) {
         // min-width: 800px;
@@ -81,12 +69,12 @@
     }
     @media (min-width: $screen-desktop-small) {
         // width: 971px;
-        height: 825px;
+        height: 77%;
         background-position-y: 0px;
         background-size: 100%;
     }
     @media (min-width: $screen-desktop-large) {
-        height: 825px;
+        max-height: 825px;
         background-position-y: -215px;
     }
     background-position-x: 59%;

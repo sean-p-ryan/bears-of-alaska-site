@@ -79,10 +79,10 @@
         display: flex;
         justify-content: flex-end;
         position: absolute;
-        top: 92px;
-        right: 81px;
+        top: 80px;
+        right: 14px;
         @media (min-width: $screen-tablet-large) {
-            right: 46px;
+            right: 22px;
         }
     }
     .nav-items {

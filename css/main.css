@@ -112,13 +112,13 @@ h3 {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 92px;
-    right: 81px;
+    top: 80px;
+    right: 14px;
   }
 }
 @media (min-width: 767px) and (min-width: 1023px) {
   .nav-bar {
-    right: 46px;
+    right: 22px;
   }
 }
 @media (min-width: 767px) {
@@ -170,22 +170,7 @@ h3 {
 }
 @media (min-width: 767px) {
   .landing-page-content-wrapper {
-    width: 750px;
-  }
-}
-@media (min-width: 1023px) {
-  .landing-page-content-wrapper {
-    width: 900px;
-  }
-}
-@media (min-width: 1250px) {
-  .landing-page-content-wrapper {
-    width: 1050px;
-  }
-}
-@media (min-width: 1500px) {
-  .landing-page-content-wrapper {
-    width: 1400px;
+    width: 95%;
   }
 }
 
@@ -195,13 +180,8 @@ h3 {
   height: 100px;
   background-size: cover;
   position: absolute;
-  top: 40px;
+  top: 35px;
   left: 15px;
-}
-@media (min-width: 767px) {
-  .logo {
-    top: 70px;
-  }
 }
 @media (min-width: 1023px) {
   .logo {
@@ -235,9 +215,9 @@ h3 {
 @media (min-width: 767px) {
   .hero-image {
     width: 95%;
-    height: 700px;
-    margin-top: 146px;
-    background-position-y: -243px;
+    height: 75%;
+    margin-top: 121px;
+    background-position-y: -260px;
   }
 }
 @media (min-width: 1023px) {
@@ -249,14 +229,14 @@ h3 {
 }
 @media (min-width: 1250px) {
   .hero-image {
-    height: 825px;
+    height: 77%;
     background-position-y: 0px;
     background-size: 100%;
   }
 }
 @media (min-width: 1500px) {
   .hero-image {
-    height: 825px;
+    max-height: 825px;
     background-position-y: -215px;
   }
 }
@@ -287,12 +267,12 @@ h3 {
 }
 @media (min-width: 375px) {
   .music-page-wrapper {
-    height: 500px;
+    height: 600px;
   }
 }
 @media (min-width: 414px) {
   .music-page-wrapper {
-    height: 600px;
+    height: 650px;
   }
 }
 @media (min-width: 767px) {
