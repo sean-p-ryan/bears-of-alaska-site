@@ -75,10 +75,15 @@
         display: none;
     }
     .nav-bar {
-        padding-right: 30px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        position: absolute;
+        top: 92px;
+        right: 81px;
+        @media (min-width: $screen-tablet-large) {
+            right: 46px;
+        }
     }
     .nav-items {
         display: flex;
@@ -87,9 +92,8 @@
         align-items: center;
         justify-content: flex-end;
         background: none;
-        padding: 90px 87px 0px 0px;
     }
     .nav-item {
-        margin: 0 20px 0 0;
+        margin: 0 0 0 20px;
     }
 }

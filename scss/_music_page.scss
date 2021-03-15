@@ -14,9 +14,34 @@
     background-color: $music-page-background;
 }
 
+@media (min-width: $screen-tablet-large) {
+    .music-page-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+    }
+    .music-page-inner-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .music-page-image {
+        width: 531px;
+        height: 531px;
+        background-position-y: -232px;
+        margin: 0 50px 0 0;
+    }
+}
+
 .music-page-image {
     width: 275px;
     height: 275px;
+    margin: 50px auto;
+    background-image: url(../img/music-page-photo-uncompressed.jpg);
+    background-size: cover;
+    background-position-y: -130px;
+    background-repeat: no-repeat;
     @media (min-width: $screen-smaller) {
         width: 325px;
         height: 350px;
@@ -25,11 +50,12 @@
         width: 365px;
         height: 375px;
     }
-    margin: 50px auto;
-    background-image: url(../img/music-page-photo-uncompressed.jpg);
-    background-size: cover;
-    background-position-y: -130px;
-    background-repeat: no-repeat;
+    @media (min-width: $screen-tablet-large) {
+        width: 531px;
+        height: 531px;
+        background-position-y: -232px;
+        margin: 0 50px 0 0;
+    }
 }
 
 .music-page-text {
