@@ -34,7 +34,6 @@
     position: absolute;
     right: 27px;
     top: 56px;
-    cursor: pointer;
     z-index: 2000;
     width: 30px;
     height: 30px;
@@ -73,6 +72,16 @@
     &.active {
         display: block;
     }
+}
+
+#nav-toggle-overlay {
+    position: absolute;
+    right: 27px;
+    top: 47px;
+    cursor: pointer;
+    z-index: 2000;
+    width: 30px;
+    height: 22px;
 }
 
 @media (min-width: $screen-tablet-narrow) {

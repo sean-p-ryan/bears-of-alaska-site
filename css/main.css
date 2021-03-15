@@ -4,7 +4,7 @@ body {
   padding: 0;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  font-family: "Red Rose", cursive;
+  font-family: "Red Rose";
   line-height: 1.5rem;
   overflow-x: hidden;
 }
@@ -69,7 +69,6 @@ h3 {
   position: absolute;
   right: 27px;
   top: 56px;
-  cursor: pointer;
   z-index: 2000;
   width: 30px;
   height: 30px;
@@ -107,6 +106,16 @@ h3 {
 }
 #nav-toggle.active {
   display: block;
+}
+
+#nav-toggle-overlay {
+  position: absolute;
+  right: 27px;
+  top: 47px;
+  cursor: pointer;
+  z-index: 2000;
+  width: 30px;
+  height: 22px;
 }
 
 @media (min-width: 769px) {

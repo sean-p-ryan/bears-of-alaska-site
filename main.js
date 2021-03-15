@@ -1,20 +1,17 @@
-const navToggle = document.querySelector('.nav-mobile');
+const mobileNavIcon = document.querySelector('.nav-mobile')
 const navItems = document.querySelector('.nav-items');
 const navLinks = document.querySelectorAll('.nav-item');
 
-function toggleActive() {
-    navToggle.classList.toggle('active')
-    if (window.innerWidth < 767) { navItems.classList.toggle('visible') }
-}
-
-navToggle.onclick = toggleActive
-
-// function addOnclicks() {
-//     console.log()    
-//     Array.from(navLinks).forEach(function (link) {
-//         link.onclick = toggleActive
-//     })
-// }
-
-addOnclicks()
+document.addEventListener('click', function (e) {
+    if (window.innerWidth <= 769) {
+        if (e.target.id === 'nav-toggle-overlay') {
+            navItems.classList.toggle('visible')
+            mobileNavIcon.classList.toggle('active')
+        }
+        if (e.target.id === 'nav-item') {
+            navItems.classList.toggle('visible')
+            mobileNavIcon.classList.toggle('active')
+        }
+    }
+})
 
