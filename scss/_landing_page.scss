@@ -7,7 +7,7 @@
         height: 80vh;
     }
     @media (min-width: $screen-desktop-large) {
-        height: 1100px;
+        height: 100vh;
     }
 }
 
@@ -45,7 +45,6 @@
     left: 15px;
     @media (min-width: $screen-tablet-narrow) {
         top: 70px;
-        left: 70px;
     }
     @media (min-width: $screen-tablet-large) {
         width: 167px;
@@ -69,25 +68,26 @@
         height: 524px;
     }
     @media (min-width: $screen-tablet-narrow) {
-        min-width: 577px;
-        height: 909px;
+        width: 95%;
+        height: 700px;
         margin-top: 146px;
         background-position-y: -243px;
     }
     @media (min-width: $screen-tablet-large) {
-        min-width: 800px;
+        // min-width: 800px;
         height: 700px;
         background-position-y: 0px;
         background-size: 100%;
     }
     @media (min-width: $screen-desktop-small) {
-        min-width: 971px;
+        // width: 971px;
         height: 825px;
         background-position-y: 0px;
         background-size: 100%;
     }
     @media (min-width: $screen-desktop-large) {
-        width: 1298px;
+        height: 825px;
+        background-position-y: -215px;
     }
     background-position-x: 59%;
     margin: 40px auto;
@@ -102,7 +102,7 @@
     width: 100%;
     @media (min-width: $screen-tablet-narrow) {
         position: absolute;
-        bottom: 30px;
+        bottom: 15px;
     }
     & li {
         margin: 0 10px;

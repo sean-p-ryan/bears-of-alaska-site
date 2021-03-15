@@ -149,7 +149,7 @@ h3 {
 }
 @media (min-width: 1500px) {
   .landing-page-wrapper {
-    height: 1100px;
+    height: 100vh;
   }
 }
 
@@ -201,7 +201,6 @@ h3 {
 @media (min-width: 767px) {
   .logo {
     top: 70px;
-    left: 70px;
   }
 }
 @media (min-width: 1023px) {
@@ -235,15 +234,14 @@ h3 {
 }
 @media (min-width: 767px) {
   .hero-image {
-    min-width: 577px;
-    height: 909px;
+    width: 95%;
+    height: 700px;
     margin-top: 146px;
     background-position-y: -243px;
   }
 }
 @media (min-width: 1023px) {
   .hero-image {
-    min-width: 800px;
     height: 700px;
     background-position-y: 0px;
     background-size: 100%;
@@ -251,7 +249,6 @@ h3 {
 }
 @media (min-width: 1250px) {
   .hero-image {
-    min-width: 971px;
     height: 825px;
     background-position-y: 0px;
     background-size: 100%;
@@ -259,7 +256,8 @@ h3 {
 }
 @media (min-width: 1500px) {
   .hero-image {
-    width: 1298px;
+    height: 825px;
+    background-position-y: -215px;
   }
 }
 
@@ -274,7 +272,7 @@ h3 {
 @media (min-width: 767px) {
   .social-badges {
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
   }
 }
 .social-badges li {
@@ -289,7 +287,7 @@ h3 {
 }
 @media (min-width: 375px) {
   .music-page-wrapper {
-    height: 550px;
+    height: 500px;
   }
 }
 @media (min-width: 414px) {
