@@ -62,10 +62,12 @@ h3 {
 
 #nav-toggle {
   position: absolute;
-  right: 65px;
+  right: 35px;
   top: 56px;
   cursor: pointer;
   z-index: 2000;
+  width: 30px;
+  height: 30px;
 }
 #nav-toggle span,
 #nav-toggle span:before,
@@ -113,12 +115,12 @@ h3 {
     justify-content: flex-end;
     position: absolute;
     top: 80px;
-    right: 14px;
+    right: 30px;
   }
 }
 @media (min-width: 767px) and (min-width: 1023px) {
   .nav-bar {
-    right: 22px;
+    right: 4%;
   }
 }
 @media (min-width: 767px) {
@@ -214,7 +216,7 @@ h3 {
 }
 @media (min-width: 767px) {
   .hero-image {
-    width: 95%;
+    width: 91%;
     height: 75%;
     margin-top: 121px;
     background-position-y: -260px;
@@ -349,7 +351,7 @@ h3 {
 .bio-text {
   width: 300px;
   text-align: center;
-  margin: 75px auto;
+  margin: 50px auto;
   font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
   line-height: 1.5rem;
   letter-spacing: 0.02rem;
