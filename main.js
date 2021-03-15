@@ -4,16 +4,17 @@ const navLinks = document.querySelectorAll('.nav-item');
 
 function toggleActive() {
     navToggle.classList.toggle('active')
-    navItems.classList.toggle('visible')
+    if (window.innerWidth < 767) { navItems.classList.toggle('visible') }
 }
 
-function addOnclicks(){
-    console.log()
-    navToggle.onclick = toggleActive
-    Array.from(navLinks).forEach(function(link) {
-        link.onclick = toggleActive
-    })
-}
+navToggle.onclick = toggleActive
+
+// function addOnclicks() {
+//     console.log()    
+//     Array.from(navLinks).forEach(function (link) {
+//         link.onclick = toggleActive
+//     })
+// }
 
 addOnclicks()
 
