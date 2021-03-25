@@ -30,6 +30,7 @@ li {
 h3 {
   font-size: 1.5em;
   font-weight: 500;
+  margin: 0;
 }
 
 .hero-image {
@@ -314,6 +315,12 @@ h3 {
 @media (min-width: 769px) {
   .bio-text {
     width: 700px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1250px) {
+  .bio-text {
+    width: 900px;
   }
 }
 
@@ -345,7 +352,7 @@ h3 {
 }
 @media (min-width: 769px) {
   .contact-link {
-    margin-top: 9rem;
+    margin-top: 6rem;
     font-size: 2.5rem;
     letter-spacing: 0.8rem;
     padding-bottom: 34px;
