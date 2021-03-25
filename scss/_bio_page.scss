@@ -5,6 +5,9 @@
     background-color: $bio-page-background;
     text-align: center;
     color: $font-white;
+    @media (min-width: $screen-tablet-large) {
+        padding: 2rem 0;
+    }
 }
 
 .bio-text {

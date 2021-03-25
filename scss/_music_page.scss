@@ -10,6 +10,7 @@
         height: 650px;
     }
     @media (min-width: $screen-tablet-narrow) {
+        padding: 2rem 0;
         height: 655px;
     }
     @media (min-width: $screen-tablet-large) {

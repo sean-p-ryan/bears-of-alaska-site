@@ -228,6 +228,7 @@ h3 {
 }
 @media (min-width: 769px) {
   .music-page-wrapper {
+    padding: 2rem 0;
     height: 655px;
   }
 }
@@ -298,6 +299,11 @@ h3 {
   background-color: #BE6136;
   text-align: center;
   color: white;
+}
+@media (min-width: 1023px) {
+  .bio-page-wrapper {
+    padding: 2rem 0;
+  }
 }
 
 .bio-text {
