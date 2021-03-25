@@ -5,6 +5,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     @include red-rose;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
     overflow-x: hidden;
 }
 

@@ -1,16 +1,19 @@
 .bio-page-wrapper {
     padding-top: 10px;
     width: 100vw;
-    height: 340px;
+    height: auto;
     background-color: $bio-page-background;
     text-align: center;
     color: $font-white;
 }
 
 .bio-text {
-    width: 300px;
-    text-align: center;
-    margin: 50px auto;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    text-transform: none;
+    padding: 20px;
     @include helvetica;
     text-transform: none;
     @media (min-width: $screen-tablet-narrow) {

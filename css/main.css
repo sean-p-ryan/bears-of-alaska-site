@@ -6,6 +6,11 @@ body {
   letter-spacing: 0.3rem;
   font-family: "Red Rose";
   line-height: 1.5rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main-wrapper {
   overflow-x: hidden;
 }
 
@@ -169,7 +174,7 @@ h3 {
 }
 
 .hero-image {
-  background-image: url(../img/landing-page-photo-uncompressed.jpg);
+  background-image: url(../img/landing-page-photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 120vw;
@@ -246,7 +251,7 @@ h3 {
   width: 275px;
   height: 275px;
   margin: 50px auto;
-  background-image: url(../img/music-page-photo-uncompressed.jpg);
+  background-image: url(../img/album-cover.jpg);
   background-size: cover;
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -265,30 +270,42 @@ h3 {
 }
 @media (min-width: 1023px) {
   .music-page-image {
-    width: 531px;
-    height: 531px;
+    min-width: 500px;
+    height: 500px;
     margin: 0 50px 0 0;
   }
 }
 
 .music-page-text {
-  text-align: center;
   color: white;
+  text-align: center;
+}
+@media (min-width: 1023px) {
+  .music-page-text {
+    text-align: left;
+  }
+}
+
+#listen {
+  text-align: center;
 }
 
 .bio-page-wrapper {
   padding-top: 10px;
   width: 100vw;
-  height: 340px;
+  height: auto;
   background-color: #BE6136;
   text-align: center;
   color: white;
 }
 
 .bio-text {
-  width: 300px;
-  text-align: center;
-  margin: 50px auto;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  text-transform: none;
+  padding: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
   line-height: 1.5rem;
   letter-spacing: 0.02rem;
@@ -301,30 +318,78 @@ h3 {
 }
 
 .contact-page-wrapper {
-  height: 225px;
+  height: 50vw;
   width: 100vw;
-  background-image: url("../img/contact-page-uncompressed.jpg");
+  background-image: url("../img/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 769px) {
-  .contact-page-wrapper {
-    height: 500px;
-  }
-}
-@media (min-width: 1250px) {
-  .contact-page-wrapper {
-    height: 800px;
-  }
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-link {
   color: white;
-  margin-top: 7em;
   text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-indent: 0.5rem;
+  position: relative;
+  margin-top: 4rem;
+  padding-bottom: 10px;
+}
+@media (min-width: 769px) {
+  .contact-link {
+    margin-top: 9rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.8rem;
+    padding-bottom: 34px;
+    text-indent: 0.8rem;
+  }
+}
+.contact-link:hover {
+  cursor: pointer;
+  border: none;
+}
+.contact-link:hover:after {
+  display: none;
+}
+.contact-link:hover span {
+  display: none;
+}
+.contact-link:hover:before {
+  content: "bearsofalaskamusic@gmail.com";
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 0;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  text-transform: lowercase;
+}
+
+.contact-link:after {
+  content: "";
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  margin-top: 20px;
+  width: 91%;
+  margin-left: 4%;
+}
+@media (min-width: 769px) {
+  .contact-link:after {
+    margin-top: 57px;
+    height: 6px;
+  }
 }
 
 .email {

@@ -35,7 +35,7 @@
     width: 275px;
     height: 275px;
     margin: 50px auto;
-    background-image: url(../img/music-page-photo-uncompressed.jpg);
+    background-image: url(../img/album-cover.jpg);
     background-size: cover;
     background-position-y: bottom;
     background-repeat: no-repeat;
@@ -48,13 +48,20 @@
         height: 375px;
     }
     @media (min-width: $screen-tablet-large) {
-        width: 531px;
-        height: 531px;
+        min-width: 500px;
+        height: 500px;
         margin: 0 50px 0 0;
     }
 }
 
 .music-page-text {
-    text-align: center;
     color: $font-white;
+    text-align: center;
+    @media (min-width: $screen-tablet-large) {
+        text-align: left;
+    }
+}
+
+#listen {
+    text-align: center;
 }
