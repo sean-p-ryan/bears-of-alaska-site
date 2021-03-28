@@ -12,6 +12,9 @@
     width: 93vw;
     height: auto;
     padding-right: 25px;
+    @media (min-width: $screen-desktop-large) {
+        max-width: 1480px;
+    }
 }
 
 .logo {
@@ -38,6 +41,9 @@
         margin-left: 50px;
         margin-top: 45px;
     }
+    @media (min-width: $screen-desktop-large) {
+        height: 800px;
+    }
 }
 
 .social-badges {
@@ -49,7 +55,6 @@
     margin: 25px 0;
     @media (min-width: $screen-tablet-narrow) {
         font-size: 1.9rem;
-        margin: 30px;
     }
     & li {
         margin: 0 10px;

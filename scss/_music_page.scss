@@ -1,68 +1,55 @@
 .music-page-wrapper {
-    width: 100vw;
-    height: 550px;
-    padding-top: 10px;
     background-color: $music-page-background;
-    @media (min-width: $screen-smaller) {
-        height: 600px;
-    }
-    @media (min-width: $screen-small) {
-        height: 650px;
-    }
     @media (min-width: $screen-tablet-narrow) {
-        padding: 2rem 0;
-        height: 655px;
-    }
-    @media (min-width: $screen-tablet-large) {
         .music-page-wrapper {
             display: flex;
             flex-direction: column;
-            height: 750px;
+            padding-bottom: 6rem;
         }
     }
 }
 
-@media (min-width: $screen-tablet-large) {
-    .music-page-inner-wrapper {
+.music-page-inner-wrapper {
+    padding-bottom: 5rem;
+    @media (min-width: $screen-tablet-narrow) {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-        padding: 0 50px;
+        width: 85vw;
+        margin-left: 4.5rem;
+        padding-bottom: 5rem;
+        justify-content: flex-start;
     }
 }
 
 .music-page-image {
-    width: 275px;
-    height: 275px;
-    margin: 50px auto;
+    width: 91vw;
+    height: 93vw;
+    margin: 0 auto;
     background-image: url(../img/album-cover.jpg);
-    background-size: cover;
-    background-position-y: bottom;
+    background-size: contain;
+    background-position-y: top;
     background-repeat: no-repeat;
-    @media (min-width: $screen-smaller) {
-        width: 325px;
-        height: 350px;
-    }
-    @media (min-width: $screen-small) {
-        width: 365px;
-        height: 375px;
-    }
-    @media (min-width: $screen-tablet-large) {
-        min-width: 500px;
-        height: 500px;
-        margin: 0 50px 0 0;
+    @media (min-width: $screen-tablet-narrow) {
+        width: 42vw;
+        height: 42vw;
+        margin: 0;
     }
 }
 
 .music-page-text {
     color: $font-white;
     text-align: center;
-    @media (min-width: $screen-tablet-large) {
+    @media (min-width: $screen-tablet-narrow) {
         text-align: left;
     }
 }
 
+.music-page-text p,
+.music-page-text h4 {
+    margin-left: 2rem;
+}
+
 #listen {
     text-align: center;
+    padding: 2.5rem 0;
 }
