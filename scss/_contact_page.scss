@@ -12,49 +12,36 @@
 .contact-link {
     color: white;
     text-align: center;
-    // letter-spacing: 0.5rem;
-    text-indent: 0.5rem;
     position: relative;
-    margin-top: 4rem;
-    padding-bottom: 10px;
+    border-bottom: 7px solid $white;
     @media (min-width: $screen-tablet-narrow) {
-        margin-top: 6rem;
-        text-indent: 0.8rem;
         margin-right: 1rem;
         font-size: 4.4rem;
     }
     &:hover {
         cursor: pointer;
-        border: none;
-    }
-    &:hover:after {
-        display: none;
-    }
-    &:hover span {
-        display: none;
-    }
-    &:hover:before {
-        content: "bearsofalaskamusic@gmail.com";
-        font-size: 1.8rem;
-        letter-spacing: 0.3rem;
-        padding-bottom: 0;
-        border: none;
-        text-transform: lowercase;
     }
 }
 
-.contact-link:after {
-    content: "";
-    background: white;
-    position: absolute;
-    bottom: 7px;
-    left: 0;
-    height: 4px;
-    width: 91%;
-    margin-left: 8%;
-    @media (min-width: $screen-tablet-narrow) {
-        height: 7px;
-    }
+.contact-text-container {
+    padding: 3rem;
+    height: 2rem;
+}
+
+.overlay {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.smaller-text {
+    font-size: 1.5rem;
 }
 
 .email {
