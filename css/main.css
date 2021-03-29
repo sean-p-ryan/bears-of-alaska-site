@@ -439,7 +439,6 @@ h3 {
   color: white;
   text-align: center;
   position: relative;
-  border-bottom: 7px solid #ffffff;
 }
 @media (min-width: 769px) {
   .contact-link {
