@@ -5,15 +5,15 @@
 .music-page-inner-wrapper {
     padding: 4rem 0;
     @media (min-width: $screen-tablet-narrow) {
-        width: 85vw;
+        padding: 7rem 0;
         display: flex;
         justify-content: flex-start;
-        margin: 0 auto;
-        padding: 7rem 2rem 7rem 2.9rem;
-        height: 408px;
+        align-items: center;
     }
     @media (min-width: $screen-desktop-large) {
         width: 1210px;
+        height: 563px;
+        margin: 0 auto;
     }
 }
 
@@ -26,28 +26,41 @@
     background-position-y: top;
     background-repeat: no-repeat;
     @media (min-width: $screen-tablet-narrow) {
-        width: 430px;
-        height: 430px;
-        margin: 0;
+        width: 42.5vw;
+        height: 42.5vw;
+        margin: 0 30px 0 7.5vw;
+    }
+    @media (min-width: $screen-desktop-large) {
+        height: 563px;
+        width: 563px;
+        margin: 0 30px 0 6px;
     }
 }
 
 .music-page-text {
     color: $white;
     text-align: center;
+    font-size: 3.5rem;
     @media (min-width: $screen-tablet-narrow) {
         text-align: left;
-        margin-left: 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        max-width: 38vw;
+    }
+    @media (min-width: $screen-desktop-large) {
+        max-width: 611px;
     }
 }
 
 .music-page-text h1 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     @media (min-width: $screen-tablet-narrow) {
-        margin-bottom: 3rem;
+        font-size: 2.4rem;
+        height: 143px;
+        width: 100%;
+    }
+    @media (min-width: $screen-desktop-small) {
+        font-size: 3.1rem;
     }
 }
 
