@@ -54,7 +54,7 @@ h3 {
 }
 
 .hero-image {
-  background-image: url("../img/landing-page-photo-uncompressed.jpg");
+  background-image: url("../img/landing-page-photo-v2.jpg");
 }
 
 .button-white {
@@ -249,7 +249,7 @@ h3 {
 }
 
 .hero-image {
-  background-image: url(../img/landing-page-photo.jpg);
+  background-image: url(../img/landing-page-photo-v2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 120vw;
@@ -314,7 +314,7 @@ h3 {
   width: 91vw;
   height: 93vw;
   margin: 0 auto;
-  background-image: url(../img/album-cover.jpg);
+  background-image: url(../img/album-cover-v2.jpg);
   background-size: contain;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -356,7 +356,7 @@ h3 {
 }
 
 .bio-page-wrapper {
-  background: url("../img/trees-background.jpg");
+  background: url("../img/trees-v2.jpg");
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -395,7 +395,7 @@ h3 {
 }
 
 .about-main-wrapper {
-  background: url("../img/trees-background.jpg");
+  background: url("../img/trees-v2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -407,7 +407,7 @@ h3 {
 .contact-page-wrapper {
   height: 50vw;
   width: 100vw;
-  background-image: url("../img/contact.jpg");
+  background-image: url("../img/contact-photo-v2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
