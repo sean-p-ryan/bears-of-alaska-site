@@ -1,15 +1,25 @@
-// Fonts
-$font-black: #000000;
-$font-white: white;
-@mixin red-rose {
-    font-family: 'Red Rose';
-    line-height: 1.5rem;
+// Typography
+@font-face {
+    font-family: 'AvantGardeGothicITC W05 Book';
+    src: url("./scss/Fonts/5177111/dd26c04e-c3cb-4a0b-a9f5-a0b83df0585f.woff2") format("woff2"), url("/scss/Fonts/5177111/15803ea2-070e-4fed-aa90-f558a2267c5b.woff") format("woff");
 }
 
-@mixin helvetica {
-    font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-    line-height: 1.5rem;
-    letter-spacing: 0.02rem;
+// Colors
+$black: #000000;
+$white: #ffffff;
+@mixin poppins-light {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+@mixin poppins-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+@mixin poppins-heavy {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 // Page backgrounds
@@ -23,5 +33,4 @@ $screen-small: 414px;
 $screen-tablet-narrow: 769px;
 $screen-tablet-large: 1023px;
 $screen-desktop-small: 1250px;
-$screen-desktop-large: 1600px;
-// Fonts
+$screen-desktop-large: 1420px;

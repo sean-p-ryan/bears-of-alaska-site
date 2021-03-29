@@ -1,3 +1,4 @@
+@import '_variables.scss';
 .nav-bar {
     height: 50px;
 }
@@ -5,9 +6,7 @@
 .nav-items {
     display: none;
     background: #ffffff;
-    @media (min-width: $screen-tablet-narrow) {
-        padding-top: 60px;
-    }
+    @include poppins-light;
 }
 
 .nav-item {
@@ -32,7 +31,7 @@
 
 #nav-toggle {
     position: absolute;
-    right: 27px;
+    right: 2rem;
     top: 56px;
     z-index: 2000;
     width: 30px;
@@ -44,7 +43,7 @@
         border-radius: 1px;
         height: 4px;
         width: 30px;
-        background: $font-black;
+        background: $black;
         position: absolute;
         display: block;
         content: '';
@@ -76,7 +75,7 @@
 
 #nav-toggle-overlay {
     position: absolute;
-    right: 27px;
+    right: 2rem;
     top: 47px;
     cursor: pointer;
     z-index: 2000;
@@ -102,6 +101,6 @@
         background: none;
     }
     .nav-item {
-        margin: 0 0 0 20px;
+        margin: 0 0 10px 40px;
     }
 }

@@ -1,30 +1,29 @@
 .bio-page-wrapper {
-    width: 100vw;
-    height: auto;
-    background-color: $bio-page-background;
+    background: url("../img/trees-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-    color: $font-white;
-}
-
-.bio-page-wrapper h3 {
-    text-align: center;
-    padding: 2.5rem 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio-text {
-    text-align: left;
-    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    line-height: 1.5rem;
-    letter-spacing: 0.02rem;
-    text-transform: none;
-    padding: 0 1rem 5rem 1rem;
-    @include helvetica;
-    text-transform: none;
-    @media (min-width: $screen-tablet-narrow) {
-        width: 700px;
-        margin: 0 auto;
+    @include poppins-text;
+    margin: 4rem 0;
+    font-size: 1.5rem;
+    width: 80vw;
+    @media(min-width: $screen-tablet-narrow) {
+        font-weight: 400;
+        font-size: 2rem;
+        width: 560px;
     }
-    @media (min-width: $screen-desktop-small) {
-        width: 900px;
+    @media(min-width: $screen-tablet-large) {
+        width: 1000px;
     }
+}
+
+.bio-text button {
+    margin-top: 2rem;
 }

@@ -1,23 +1,19 @@
 .music-page-wrapper {
     background-color: $music-page-background;
-    @media (min-width: $screen-tablet-narrow) {
-        .music-page-wrapper {
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 6rem;
-        }
-    }
 }
 
 .music-page-inner-wrapper {
-    padding-bottom: 5rem;
+    padding: 4rem 0;
     @media (min-width: $screen-tablet-narrow) {
-        display: flex;
-        align-items: center;
         width: 85vw;
-        margin-left: 4.5rem;
-        padding-bottom: 5rem;
+        display: flex;
         justify-content: flex-start;
+        margin: 0 auto;
+        padding: 7rem 2rem 7rem 2.9rem;
+        height: 408px;
+    }
+    @media (min-width: $screen-desktop-large) {
+        width: 1210px;
     }
 }
 
@@ -30,23 +26,29 @@
     background-position-y: top;
     background-repeat: no-repeat;
     @media (min-width: $screen-tablet-narrow) {
-        width: 42vw;
-        height: 42vw;
+        width: 430px;
+        height: 430px;
         margin: 0;
     }
 }
 
 .music-page-text {
-    color: $font-white;
+    color: $white;
     text-align: center;
     @media (min-width: $screen-tablet-narrow) {
         text-align: left;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
-.music-page-text p,
-.music-page-text h4 {
-    margin-left: 2rem;
+.music-page-text h1 {
+    margin-bottom: 1.5rem;
+    @media (min-width: $screen-tablet-narrow) {
+        margin-bottom: 3rem;
+    }
 }
 
 #listen {

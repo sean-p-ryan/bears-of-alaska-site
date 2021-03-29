@@ -2,9 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    @include red-rose;
+    font-family: 'AvantGardeGothicITC W05 Book';
     width: 100%;
     overflow-x: hidden;
 }
@@ -30,6 +28,19 @@ li {
     list-style: none;
 }
 
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    margin: 0;
+    margin-bottom: 0px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    @media (min-width: $screen-tablet-large) {
+        font-size: 3.5rem;
+    }
+}
+
 h3 {
     font-size: 1.5em;
     font-weight: 500;
@@ -38,4 +49,39 @@ h3 {
 
 .hero-image {
     background-image: url('../img/landing-page-photo-uncompressed.jpg')
+}
+
+.button-white {
+    width: 160px;
+    height: 60px;
+    border: 2px solid #fff;
+    background: #000000;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    &:hover {
+        cursor: pointer;
+        background: $white;
+        color: $black;
+    }
+}
+
+.button-black {
+    width: 160px;
+    height: 60px;
+    border: 2px solid $black;
+    background: transparent;
+    color: $black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    &:hover {
+        cursor: pointer;
+        color: $white;
+        border: 2px solid $white;
+        background: rgb(218, 216, 216);
+    }
 }

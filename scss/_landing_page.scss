@@ -7,13 +7,16 @@
 }
 
 .landing-page-content-wrapper {
-    margin: 0 auto;
     position: relative;
-    width: 93vw;
     height: auto;
-    padding-right: 25px;
+    padding: 2rem 2rem 0 2rem;
+    @media (min-width: $screen-tablet-narrow) {
+        margin: 0 auto;
+        width: 85vw;
+        padding-top: 2%;
+    }
     @media (min-width: $screen-desktop-large) {
-        max-width: 1480px;
+        width: 1210px;
     }
 }
 
@@ -25,6 +28,12 @@
     position: absolute;
     top: 35px;
     left: 10px;
+    @media (min-width: $screen-tablet-narrow) {
+        width: 160px;
+        height: 126px;
+        top: 24px;
+        left: -10px;
+    }
 }
 
 .hero-image {
@@ -32,17 +41,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 120vw;
-    margin-left: 7%;
-    margin-top: 32px;
     background-position-x: 60%;
     background-position-y: bottom;
     @media (min-width: $screen-tablet-narrow) {
         height: 50vw;
         margin-left: 50px;
         margin-top: 45px;
+        margin: 0;
     }
     @media (min-width: $screen-desktop-large) {
-        height: 800px;
+        max-height: 690px;
     }
 }
 
