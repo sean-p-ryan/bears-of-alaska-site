@@ -12,7 +12,7 @@
     }
     @media (min-width: $screen-desktop-large) {
         width: 1210px;
-        height: 563px;
+        height: 630px;
         margin: 0 auto;
     }
 }
@@ -31,8 +31,8 @@
         margin: 0 30px 0 7.5vw;
     }
     @media (min-width: $screen-desktop-large) {
-        height: 563px;
-        width: 563px;
+        height: 630px;
+        width: 630px;
         margin: 0 30px 0 6px;
     }
 }
@@ -55,12 +55,21 @@
 .music-page-text h1 {
     margin-bottom: 2.5rem;
     @media (min-width: $screen-tablet-narrow) {
-        font-size: 2.4rem;
-        height: 143px;
         width: 100%;
+        font-size: 2.7rem;
+    }
+    @media (min-width: 918px) {
+        font-size: 3rem;
+        height: 230px;
+        height: 200px;
     }
     @media (min-width: $screen-desktop-small) {
-        font-size: 3.1rem;
+        font-size: 3.4rem;
+    }
+    @media (min-width: $screen-desktop-large) {
+        height: 256px;
+        font-size: 4.2rem;
+        width: 486px;
     }
 }
 

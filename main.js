@@ -20,16 +20,20 @@ document.addEventListener('click', function (e) {
 })
 
 document.addEventListener('click', function(e){
+    console.log(emailVisible)
+    console.log(e.target)
     if(e.target.classList.contains('contact-link')){
         if (window.innerWidth <= 1000){
             contactLink.classList.add('smaller-text')
         }
         if(!emailVisible){
             contactLink.innerText = "bearsofalaskamusic.com";  
+            contactLink.style.borderBottom = "none";
             overlay.style.visibility = "visible";
-            body.style.overflowY = "hidden";
+            body.style.overflowY = "hidden";            
         } else {
             contactLink.innerText = "Contact";  
+            contactLink.style.borderBottom = "6px solid white";
             overlay.style.visibility = "hidden";
             body.style.overflowY = "auto";
             contactLink.classList.remove('smaller-text')
@@ -37,11 +41,3 @@ document.addEventListener('click', function(e){
         emailVisible = !emailVisible;        
     }
 })
-
-// document.addEventListener('mouseout', function(e){
-//     if(e.target.classList.contains('contact-link')){
-//         contactLink.innerText = "Contact";    
-//         contactTextContainer.style.witdth = "100vw";
-//     }
-// })
-

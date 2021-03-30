@@ -305,7 +305,7 @@ h3 {
 @media (min-width: 1420px) {
   .music-page-inner-wrapper {
     width: 1210px;
-    height: 563px;
+    height: 630px;
     margin: 0 auto;
   }
 }
@@ -328,8 +328,8 @@ h3 {
 }
 @media (min-width: 1420px) {
   .music-page-image {
-    height: 563px;
-    width: 563px;
+    height: 630px;
+    width: 630px;
     margin: 0 30px 0 6px;
   }
 }
@@ -358,14 +358,27 @@ h3 {
 }
 @media (min-width: 769px) {
   .music-page-text h1 {
-    font-size: 2.4rem;
-    height: 143px;
     width: 100%;
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 918px) {
+  .music-page-text h1 {
+    font-size: 3rem;
+    height: 230px;
+    height: 200px;
   }
 }
 @media (min-width: 1250px) {
   .music-page-text h1 {
-    font-size: 3.1rem;
+    font-size: 3.4rem;
+  }
+}
+@media (min-width: 1420px) {
+  .music-page-text h1 {
+    height: 256px;
+    font-size: 4.2rem;
+    width: 486px;
   }
 }
 
@@ -425,6 +438,7 @@ h3 {
 }
 
 .contact-page-wrapper {
+  z-index: 1;
   height: 50vw;
   width: 100vw;
   background-image: url("../img/contact-photo-v2.jpg");
@@ -438,7 +452,7 @@ h3 {
 .contact-link {
   color: white;
   text-align: center;
-  position: relative;
+  border-bottom: 6px solid white;
 }
 @media (min-width: 769px) {
   .contact-link {
@@ -456,6 +470,7 @@ h3 {
 }
 
 .overlay {
+  pointer-events: none;
   z-index: 0;
   height: 100%;
   width: 100%;
