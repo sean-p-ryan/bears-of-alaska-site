@@ -421,38 +421,19 @@ h3 {
 
 .bio-text a {
   color: #30475e;
+  transition: border 0.2s;
+  border-bottom: 2px solid rgba(48, 71, 94, 0);
+}
+.bio-text a:hover {
+  border-color: #30475e;
 }
 
 .bio-text button {
   margin-top: 2rem;
 }
 
-.cool-link {
-  position: relative;
-}
-.cool-link:after {
-  content: "";
-  position: absolute;
-  bottom: -0.1em;
-  left: 50%;
-  right: 50%;
-  height: 1px;
-  background: currentColor;
-  transition: all ease 0.2s;
-}
-.cool-link:hover:after {
-  left: 0;
-  right: 0;
-  height: 6px;
-}
-.cool-link:before {
-  position: absolute;
-  transform: translateX(-100%);
-  left: -10px;
-  color: #eee;
-  opacity: 0.3;
-  font-weight: 100;
-  font-size: 0.8em;
+.invisible-line {
+  visibility: hidden;
 }
 
 .about-page-wrapper {
