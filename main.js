@@ -20,8 +20,6 @@ document.addEventListener('click', function (e) {
 })
 
 document.addEventListener('click', function(e){
-    console.log(emailVisible)
-    console.log(e.target)
     if(e.target.classList.contains('contact-link')){
         if (window.innerWidth <= 1000){
             contactLink.classList.add('smaller-text')

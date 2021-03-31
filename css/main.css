@@ -419,8 +419,40 @@ h3 {
   }
 }
 
+.bio-text a {
+  color: #30475e;
+}
+
 .bio-text button {
   margin-top: 2rem;
+}
+
+.cool-link {
+  position: relative;
+}
+.cool-link:after {
+  content: "";
+  position: absolute;
+  bottom: -0.1em;
+  left: 50%;
+  right: 50%;
+  height: 1px;
+  background: currentColor;
+  transition: all ease 0.2s;
+}
+.cool-link:hover:after {
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+.cool-link:before {
+  position: absolute;
+  transform: translateX(-100%);
+  left: -10px;
+  color: #eee;
+  opacity: 0.3;
+  font-weight: 100;
+  font-size: 0.8em;
 }
 
 .about-page-wrapper {
@@ -438,7 +470,6 @@ h3 {
 }
 
 .contact-page-wrapper {
-  z-index: 1;
   height: 50vw;
   width: 100vw;
   background-image: url("../img/contact-photo-v2.jpg");
@@ -453,6 +484,7 @@ h3 {
   color: white;
   text-align: center;
   border-bottom: 6px solid white;
+  z-index: 5;
 }
 @media (min-width: 769px) {
   .contact-link {
@@ -467,11 +499,12 @@ h3 {
 .contact-text-container {
   padding: 3rem;
   height: 2rem;
+  z-index: 5;
 }
 
 .overlay {
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   height: 100%;
   width: 100%;
   position: fixed;
