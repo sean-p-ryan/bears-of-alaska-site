@@ -25,7 +25,7 @@ document.addEventListener('click', function(e){
             contactLink.classList.add('smaller-text')
         }
         if(!emailVisible){
-            contactLink.innerText = "bearsofalaskamusic.com";  
+            contactLink.innerText = "bearsofalaskamusic@gmail.com";  
             contactLink.style.borderBottom = "none";
             overlay.style.visibility = "visible";
             body.style.overflowY = "hidden";            
