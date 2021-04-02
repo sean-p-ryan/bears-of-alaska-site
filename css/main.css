@@ -292,7 +292,7 @@ h3 {
 }
 
 .music-page-inner-wrapper {
-  padding: 4rem 0;
+  padding: 4rem 0 2rem 0;
 }
 @media (min-width: 769px) {
   .music-page-inner-wrapper {
@@ -354,7 +354,7 @@ h3 {
 }
 
 .music-page-text h1 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 769px) {
   .music-page-text h1 {
