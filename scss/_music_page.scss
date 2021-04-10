@@ -54,7 +54,9 @@
 
 .music-page-text h1 {
     margin-bottom: 1.5rem;
+    padding: 0 1.4rem;
     @media (min-width: $screen-tablet-narrow) {
+        padding: 0;
         width: 100%;
         font-size: 2.7rem;
     }
